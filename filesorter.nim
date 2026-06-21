@@ -22,7 +22,7 @@ const
     ".opus"]
 
 
-for file in walkFiles("/home/emmanuelc/Downloads/*"):
+for file in walkFiles(HOME_DIRECTORY / "Downloads/*"):
     if ACCEPTED_FORMATS.contains(file):
         files.add(file)
 
